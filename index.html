@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weatherion</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+</head>
+<body>
+    
+    <div id="titleBar">
+        <div id="topInfo" class="label">
+            <div id="country">Weatherion</div>
+        </div>
+        <div id="windowControls">
+            <div id="btnSettings"><img src="icons/settings.svg" draggable="false" alt="Settings" title="Settings"></div>
+            <div id="btnClose"><img src="icons/close.svg" draggable="false" alt="Close" title="Close"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="mainWindow">
+        <div id="pane1" class="panels">
+            <div id="currentTemp">-</div>
+            <div class="bigLabel" id="conditions">-</div>
+        </div>
+        <div id="pane2" class="panels">
+            <div class="label">Min/Max</div>
+            <div class="weatherContent" id="minMax">-</div>
+        </div>
+        <div id="pane3" class="panels">
+            <div class="label">Pressure</div>
+            <div class="weatherContent" id="pressure">-</div>
+        </div>
+        <div id="pane4" class="panels">
+            <div class="label">Humidity</div>
+            <div class="weatherContent" id="humidity">-</div>
+        </div>
+        <div id="pane5" class="panels">
+            <div class="label">Wind Speed</div>
+            <div class="weatherContent" id="windSpeed">-</div>
+        </div>
+    </div>
+    <div id="forecast">
+        <div class="fPanels" id="fPanel1">
+            <div class="label" id="fDay1">-</div>
+            <div class="weatherContent" id="fTemp1">-</div>
+            <div class="weatherContent" id="fCond1">-</div>
+        </div>
+        <div class="fPanels" id="fPanel2">
+            <div class="label" id="fDay2">--</div>
+            <div class="weatherContent" id="fTemp2">-</div>
+            <div class="weatherContent" id="fCond2">-</div>
+        </div>
+        <div class="fPanels" id="fPanel3">
+            <div class="label" id="fDay3">-</div>
+            <div class="weatherContent" id="fTemp3">-</div>
+            <div class="weatherContent" id="fCond3">-</div>
+        </div>
+    </div>
+    <div id="dimmer"></div>
+    <div id="settingsBox">
+        <div class="grid1">
+            Weatherion
+        </div>
+        <div class="grid2 labels">
+            <div class="label">Address</div>
+        </div>
+        <div class="grid3 options">
+            <input type="text" id="txtAddress" class="inputField">
+        </div>
+        <div class="grid4 labels">
+            <div class="label">Units</div>
+        </div>
+        <div class="grid5 options">
+            <select id="cmbUnits" class="inputField">
+                <option value="metric">Metric (&deg;C)</option>
+                <option value="imperial">Imperial (&deg;F)</option>                
+            </select>
+        </div>
+        <div class="grid6 labels">
+            <div class="label">API Key</div>
+        </div>
+        <div class="grid7 options">
+            <input type="text" id="txtAPIKey" class="inputField">
+        </div>
+        <div class="grid8" id="gridAbout">
+            Clean weather application with 6-hour interval forecast. <br>
+            Made by Tamim Arafat.
+        </div>
+    </div>
+    <div class="banner banner-error">
+        <span class="bannerIcon"><i class="fa fa-exclamation-circle"></i></span>
+        <span class="bannerText">An error occurred. Check settings and try again.</span>
+    </div>
+
+</body>
+<script>window.$ = window.jQuery = require('jquery');</script>
+<script src="scripts/script.js"></script>
+</html>
