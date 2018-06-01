@@ -31,7 +31,6 @@ $(document).ready(function () {
 });
 
 function getWeather() {
-    // const API_KEY = "7f939a4e49b5ca2054286fba7f50c7da";
     const API_KEY = $("#txtAPIKey").val();
     var units = $("#cmbUnits").val();
     var address = $("#txtAddress").val();
