@@ -16,14 +16,14 @@
   "author": "Tamim Arafat <tamim.arafat@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^2.0.0",
-    "electron-builder": "^20.14.7"
+    "electron": "^4.0.6",
+    "electron-builder": "^20.38.5"
   },
   "dependencies": {
-    "electron-store": "^1.3.0",
+    "electron-store": "^2.0.0",
     "jquery": "^3.3.1",
-    "moment": "^2.22.1",
-    "npm": "^6.1.0"
+    "moment": "^2.24.0",
+    "npm": "^6.8.0"
   },
   "build": {
     "appId": "com.tamim.weatherion",
