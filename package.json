@@ -1,11 +1,9 @@
 {
-  "name": "weatherion",
-  "productName": "Weatherion",
+  "name": "weatherapp",
+  "productName": "Weatherapp",
   "version": "1.0.0",
   "description": "Simple and clean weather app",
-  "repository": {
-    "url": "http://github.com/arafatamim/weatherion"
-  },
+  
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -13,7 +11,6 @@
     "pack": "build --dir",
     "dist": "build"
   },
-  "author": "Tamim Arafat <tamim.arafat@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "electron": "^4.0.6",
@@ -28,7 +25,6 @@
     "npm": "^6.8.0"
   },
   "build": {
-    "appId": "com.tamim.weatherion",
     "linux": {
       "target": [
         "deb"
