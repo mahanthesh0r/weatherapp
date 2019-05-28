@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const url = require('url');
+
+
 try{
     require('electron-reloader')(module);
 }
@@ -10,8 +12,8 @@ let win;
 
 function createWindow() {
     win = new BrowserWindow({
-        width: 750,
-        height: 600,
+         width: 750,
+         height: 650,
         icon: path.join(__dirname, "build/logo.png"),
         resizable: false,
         show: false,
