@@ -17,7 +17,7 @@
     "electron-builder": "^20.38.5"
   },
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "electron-chartjs": "^1.0.0",
     "electron-store": "^2.0.0",
     "jquery": "^3.3.1",
